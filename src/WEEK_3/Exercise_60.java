@@ -13,7 +13,7 @@ public class Exercise_60 {
             String word = reader.nextLine();
 
             if (word.isEmpty()) {
-                System.out.println("You types the following words: ");
+                System.out.println("You typed the following words: ");
                 Collections.sort(alphabeticalList);
                 for (String list : alphabeticalList) {
                     System.out.println(list);

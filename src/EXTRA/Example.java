@@ -1,7 +1,10 @@
 package EXTRA;
 
+import java.util.Random;
 import java.util.Scanner;
 public class Example {
+    static Random randomizer = new Random();
+
     public static void main(String[] args) {
         //https://materiaalit.github.io/2013-oo-programming/part1/week-1/
         //semicolon is a linebreak, new row won't do a thing (just for readability)
@@ -46,5 +49,13 @@ public class Example {
         System.out.println("Your name is " + name + ", and you are "+ age + " years old, nice to meet you!");
 
         System.out.println( 99 % 2);
+
+        int i = 0;
+
+        while (i < 10) {
+            // Generates and prints out a new random number on each round of the loop
+            System.out.println(randomizer.nextInt(10));
+            i++;
+        }
     }
 }
